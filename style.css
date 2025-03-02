@@ -1,0 +1,373 @@
+:root {
+    /*
+    Pink:
+
+    --main: #333333;
+    --background: #f9e0e6;
+    --accent: #f8c8d0;
+    --button: #e2a7b6;*/
+
+    /*
+    Purple:
+
+    --main: #404040;
+    --background: #f3e9fb;
+    --accent: #c8a8d8;
+    --button: #a18bc6;*/
+
+    /*
+    Blue: 
+
+    --main: #4f5b66;
+    --background: #d6e8f1;
+    --accent: #b3cee5;
+    --button: #a2c3d8;*/
+
+    --main: #4f5b66;
+    --background: #d6e8f1;
+    --accent: #b3cee5;
+    --button: #a2c3d8;
+
+    --xPos1: 5vw;
+    --xPos2: 10vw;
+    --xPos3: 15vw;
+    --xPos4: 20vw;
+    --xPos5: 25vw;
+    --xPos6: 30vw;
+    --xPos7: 35vw;
+    --xPos8: 40vw;
+    --xPos9: 45vw;
+    --xPos10: 50vw;
+    --xPos11: 55vw;
+    --xPos12: 60vw;
+    --xPos13: 65vw;
+    --xPos14: 70vw;
+    --xPos15: 75vw;
+    --xPos16: 80vw;
+    --xPos17: 85vw;
+    --xPos18: 90vw;
+    --xPos19: 95vw;
+    --xPos20: 28vw;
+    --xPos21: 15vw;
+    --xPos22: 3vw;
+  }
+  .pText {
+    text-indent: 50px;
+    margin-left: 1vw;
+  }
+
+  @keyframes snow {
+    0% {top: 0vh;}
+    100% {top: 100vh;}
+
+  }
+
+  #dot1 {
+    position:fixed;
+    left: var(--xPos1);
+    animation-duration: 2s;
+  }
+  #dot2 {
+    position:fixed;
+    left: var(--xPos2);
+    animation-duration: 5s;
+  }
+  #dot3 {
+    position:fixed;
+    left: var(--xPos3);
+    animation-duration: 3s;
+  }
+  #dot4 {
+    position:fixed;
+    left: var(--xPos4);
+    animation-duration: 2.2s;
+  }
+  #dot5 {
+    position:fixed;
+    left: var(--xPos5);
+    animation-duration: 2.5s;
+  }
+  #dot6 {
+    position:fixed;
+    left: var(--xPos6);
+    animation-duration: 2.8s;
+  }
+  #dot7 {
+    position:fixed;
+    left: var(--xPos7);
+    animation-duration: 3.2s;
+  }
+  #dot8 {
+    position:fixed;
+    left: var(--xPos8);
+    animation-duration: 4.8s;
+  }
+  #dot9 {
+    position:fixed;
+    left: var(--xPos9);
+    animation-duration: 4.2s;
+  }
+  #dot10 {
+    position:fixed;
+    left: var(--xPos10);
+    animation-duration: 2.6s;
+  }
+  #dot11 {
+    position:fixed;
+    left: var(--xPos11);
+    animation-duration: 3.7s;
+  }
+  #dot12 {
+    position:fixed;
+    left: var(--xPos12);
+    animation-duration: 4.1s;
+  }
+  #dot13 {
+    position:fixed;
+    left: var(--xPos13);
+    animation-duration: 1.8s;
+  }
+  #dot14 {
+    position:fixed;
+    left: var(--xPos14);
+    animation-duration: 1.9s;
+  }
+  #dot15 {
+    position:fixed;
+    top:20%;
+    left: var(--xPos15);
+    animation-duration: 2.1s;
+  }
+  #dot16 {
+    position:fixed;
+    left: var(--xPos16);
+    animation-duration: 2.2s;
+  }
+  #dot17 {
+    position:fixed;
+    left: var(--xPos17);
+    animation-duration: 1.9s;
+  }
+  #dot18 {
+    position:fixed;
+    left: var(--xPos18);
+    animation-duration: 2.7s;
+  }
+  #dot19 {
+    position:fixed;
+    top:6%;
+    left: var(--xPos19);
+    animation-duration: 1.5s;
+  }
+  #dot20 {
+    position:fixed;
+    left: var(--xPos20);
+    top:10vw;
+    animation-duration: 3.23s;
+  }
+  #dot21 {
+    position:fixed;
+    left: var(--xPos21);
+    animation-duration: 1.3s;
+  }
+  #dot22 {
+    position:fixed;
+    left: var(--xPos22);
+    top:5vh;
+    animation-duration: 3.6s;
+  }
+  .dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    animation-name: snow;
+
+    position:fixed;
+    left: var(--xPos);
+    background-color: rgb(255, 255, 255, 0.5);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index:-1;
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:var(--background);
+    color: var(--main);
+    /*background-image: linear-gradient(to bottom right, #b3cee5, #f7cac9);*/
+    margin: 0;
+    overflow-x: hidden;
+
+  }
+
+  #navBar {
+    margin-left:0;
+    margin-top:-5vh;
+    background-color:var(--accent);
+    padding:5vh;
+    text-align:center;
+    width:100%;
+  }
+
+  .navLink {
+    display: inline;
+    padding:1vw;
+    color: var(--main);
+    text-decoration: none;
+  }
+  .navLink:hover {
+    background-color:var(--button);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .dropdown:hover #tutorial {
+    background-color:var(--button);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .dropdown {
+    position:relative;
+    display:inline-block;
+  }
+  .dropdownLinks {
+    margin-top:1vw;
+    width:inherit;
+    display:none;
+    position:absolute;
+    color: var(--main);
+    text-decoration:none;
+    padding:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dlink {
+    text-decoration:none;
+    display:block;
+    padding-top:1vw;
+    padding-bottom:1vw;
+    background-color:var(--accent);
+    margin:0;
+    color: var(--main);
+    border-style: dotted solid dotted solid;
+    border-width :1px;
+    border-color: rgb(0, 0, 0, 0.1);
+  }
+  .dlink:hover {
+    background-color:var(--button);
+    width:inherit;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .dropdown:hover .dropdownLinks {
+    display:block;
+  }
+  .title {
+    text-align: center;
+    margin-top:5vh;
+    margin-bottom:5vh;
+  }
+  .subtitle {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  .paragraph {
+    padding: 2vh;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius:20px;
+    border: 2px solid var(--main);
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 80%;
+    max-width:1000px;
+    text-align: justify;
+    line-height: 2;
+  }
+  ul {
+    line-height:1.5;
+  }
+  table {
+    margin:auto;
+    width:80%;
+    border:2px solid var(--accent);
+    border-radius:20px;
+    text-align:center;
+    border-collapse: collapse;
+  }
+  th, td {
+    width:50%;
+    border:2px solid var(--accent);
+  }
+  th {
+    background-color:rgb(179, 206, 229, 0.5);
+  }
+  .photosR {
+    width:25%;
+    float: right;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .photosL {
+    width:25%;
+    float: left;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  .photosRZoom {
+    float: right;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: transform 1s;
+  }
+  .photosRZoom:hover {
+    transform: scale(1.8);
+  }
+  .photosLZoom {
+    width:25%;
+    float: left;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    transition: transform 1s;
+  }
+  .photosLZoom:hover {
+    transform: scale(1.8);
+  }
+  #snow {
+    min-height:5vh;
+    max-height:10vh;
+    min-width:100vw;
+    margin-top:5vh;
+  }
+  /*If the width > height, portfolio needs to be located separately*/
+  @media only screen and (orientation: landscape) {
+    #portfolio {
+      display: inline;
+      position: relative;
+      top: 2vh;
+      left: 4vw;
+      font-size: 4vh;
+    }
+  }
+  /*If the width < height, do stuff based on width. Assume phone screen*/
+  @media only screen and (orientation: portrait) {
+    #navBar {
+      padding: 5vw;
+    }
+    .navLink {
+      font-size: 2vw;
+    }
+    #portfolio {
+      text-align: center;
+      font-size: 2vw;
+      margin: 0;
+      padding-top:2vw;
+      padding-bottom:-2vw;
+
+      background-color: var(--accent);
+    }
+    .dropdown {
+      font-size: 2vw;
+    }
+  }
