@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>ICS4U0 - Portfolio - Object Oriented Programming</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function changePos(i) {
+      var stuff = document.querySelector(':root');
+      stuff.style.setProperty('--xPos'+"i", Math.random() * 100 + "vw");
+    }
+  </script>
+
+  <!--Image first? Maybe an image of a computer or something that matches the color scheme?-->
+  <h1 id = "portfolio"> Portfolio</h1>
+  <div id="navBar">
+
+    <a href = "index.html" class = "navLink">Introduction</a>
+    <a href = "about.html" class = "navLink">About Me</a>
+    <div class = "dropdown">
+      <p class = "navLink" id = "tutorial">Tutorials</p>
+      <div class = "dropdownLinks">
+        <a href = "oop.html" class = "dlink">OOP</a>
+        <a href = "arrays.html" class = "dlink">Arrays</a>
+        <a href = "functions.html" class = "dlink">Functions</a>
+        <a href = "search.html" class = "dlink">Search & Sort</a>
+        <a href = "recursion.html" class = "dlink">Recursion</a>
+
+      </div>
+    </div>
+    <a href = "bibliography.html" class = "navLink">Bibliography</a>
+
+  </div>
+
+  <!--Draw dots-->
+  <span class = "dot" id = "dot1" onload="changePos(1)"></span>
+  <span class = "dot" id = "dot2" onload="changePos(2)"></span>
+  <span class = "dot" id = "dot3" onload="changePos(3)"></span>
+  <span class = "dot" id = "dot4" onload="changePos(4)"></span>
+  <span class = "dot" id = "dot5" onload="changePos(5)"></span>
+  <span class = "dot" id = "dot6" onload="changePos(6)"></span>
+  <span class = "dot" id = "dot7" onload="changePos(7)"></span>
+  <span class = "dot" id = "dot8" onload="changePos(8)"></span>
+  <span class = "dot" id = "dot9" onload="changePos(9)"></span>
+  <span class = "dot" id = "dot10" onload="changePos(10)"></span>
+  <span class = "dot" id = "dot11" onload="changePos(11)"></span>
+  <span class = "dot" id = "dot12" onload="changePos(12)"></span>
+  <span class = "dot" id = "dot13" onload="changePos(13)"></span>
+  <span class = "dot" id = "dot14" onload="changePos(14)"></span>
+  <span class = "dot" id = "dot15" onload="changePos(15)"></span>
+  <span class = "dot" id = "dot16" onload="changePos(16)"></span>
+  <span class = "dot" id = "dot17" onload="changePos(17)"></span>
+  <span class = "dot" id = "dot18" onload="changePos(18)"></span>
+  <span class = "dot" id = "dot19" onload="changePos(19)"></span>
+  <span class = "dot" id = "dot20" onload="changePos(20)"></span>
+  <span class = "dot" id = "dot21" onload="changePos(21)"></span>
+  <span class = "dot" id = "dot22" onload="changePos(22)"></span>
+
+
+
+  <h1 class = "title">Object Oriented Programming</h1>
+  <p class = "subtitle">What is Object Oriented Programming?</p>
+  <div class = "bodyText"> 
+    <div class = "paragraph">
+      <p class = "pText">
+        Object Oriented Programming is a model that allows code to represent real-life objects. OOP breaks down the world into different levels, which are compared in the following chart. 
+        <table>
+          <tr>
+            <th class = "OOPtable">Classes</th>
+            <th class = "OOPtable">Objects</th>
+          </tr>
+          <tr>
+            <td>
+              •<span style="margin:10px"></span>Broad<br> •<span style="margin:10px"></span>Unspecific<br> •<span style="margin:10px"></span>Category<br> •<span style="margin:10px"></span>Reusable</td>
+            <td>
+              •<span style="margin:10px"></span>Specific<br> •<span style="margin:10px"></span>Specialized data <br>•<span style="margin:10px"></span>1 case/instance
+            </td>
+          </tr>
+          <tr>
+            <td> Tree</td>
+            <td> 
+              •<span style="margin:10px"></span>Maple<br> •<span style="margin:10px"></span>Oak<br> •<span style="margin:10px"></span>Birch<br> •<span style="margin:10px"></span>Pine
+            </td>
+          </tr>
+        </table>
+      </p>
+      <p class = "pText">
+        Classes are the broadest, most abstract level of OOP. They are unspecific templates that are used to create objects. 
+      </p>
+      <p class = "pText">
+        An instance is a specific object that is created from a class. In this case, "Maple" is an instance of the class "Tree". 
+      </p>
+    </div>
+    <p class = "subtitle">Why should I care?</p>
+    <div class = "paragraph">
+      
+      <p class = "pText"> 
+        Many widely-used coding languages follow OOP, including Java, C++, and Javascript. Understanding OOP is essential to understanding these languages, since the OOP format is the backbone of these languages. 
+      </p>
+    </div>
+    <p class = "subtitle">Inhertiance</p>
+    <div class = "paragraph">
+        <p>
+            Now that you understand what classes and objects are, let's take a look at inheritance. Inheritance is also an important concept in OOP, and is also designed to echo real life. In OOP inheritance, it is when you create subclasses (children) of a superclass (parent). In real life, when a parent gives birth to a child, the child also inherits some of the attributes of the parent - they may share eye color, habits, or physical traits. When it comes to code, a subclass will inherit any public methods or fields. A subclass can also override any of these methods with its own version. 
+        </p>
+    </div>
+  </div>
+
+
+  <img src="imgs/Snow3.png" id = "snow">
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>ICS4U0 - Portfolio - Arrays</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function changePos(i) {
+      var stuff = document.querySelector(':root');
+      stuff.style.setProperty('--xPos'+"i", Math.random() * 100 + "vw");
+    }
+  </script>
+
+  <!--Image first? Maybe an image of a computer or something that matches the color scheme?-->
+  <h1 id = "portfolio"> Portfolio</h1>
+  <div id="navBar">
+
+    <a href = "index.html" class = "navLink">Introduction</a>
+    <a href = "about.html" class = "navLink">About Me</a>
+    <div class = "dropdown">
+      <p class = "navLink" id = "tutorial">Tutorials</p>
+      <div class = "dropdownLinks">
+        <a href = "oop.html" class = "dlink">OOP</a>
+        <a href = "arrays.html" class = "dlink">Arrays</a>
+        <a href = "functions.html" class = "dlink">Functions</a>
+        <a href = "search.html" class = "dlink">Search & Sort</a>
+        <a href = "recursion.html" class = "dlink">Recursion</a>
+        
+      </div>
+    </div>
+    <a href = "bibliography.html" class = "navLink">Bibliography</a>
+
+  </div>
+
+  <!--Draw dots-->
+  <span class = "dot" id = "dot1" onload="changePos(1)"></span>
+  <span class = "dot" id = "dot2" onload="changePos(2)"></span>
+  <span class = "dot" id = "dot3" onload="changePos(3)"></span>
+  <span class = "dot" id = "dot4" onload="changePos(4)"></span>
+  <span class = "dot" id = "dot5" onload="changePos(5)"></span>
+  <span class = "dot" id = "dot6" onload="changePos(6)"></span>
+  <span class = "dot" id = "dot7" onload="changePos(7)"></span>
+  <span class = "dot" id = "dot8" onload="changePos(8)"></span>
+  <span class = "dot" id = "dot9" onload="changePos(9)"></span>
+  <span class = "dot" id = "dot10" onload="changePos(10)"></span>
+  <span class = "dot" id = "dot11" onload="changePos(11)"></span>
+  <span class = "dot" id = "dot12" onload="changePos(12)"></span>
+  <span class = "dot" id = "dot13" onload="changePos(13)"></span>
+  <span class = "dot" id = "dot14" onload="changePos(14)"></span>
+  <span class = "dot" id = "dot15" onload="changePos(15)"></span>
+  <span class = "dot" id = "dot16" onload="changePos(16)"></span>
+  <span class = "dot" id = "dot17" onload="changePos(17)"></span>
+  <span class = "dot" id = "dot18" onload="changePos(18)"></span>
+  <span class = "dot" id = "dot19" onload="changePos(19)"></span>
+  <span class = "dot" id = "dot20" onload="changePos(20)"></span>
+  <span class = "dot" id = "dot21" onload="changePos(21)"></span>
+  <span class = "dot" id = "dot22" onload="changePos(22)"></span>
+
+
+
+  <h1 class = "title">Arrays</h1>
+  <div class = "bodyText"> 
+    <div class = "paragraph">
+      <p class = "pText">
+        Imagine this: you're a teacher, tasked with storing the marks of all 25 students in your class. Each student has a number, from 1-25, and a decimal mark, from 0-100. How would you store this information?
+      </p>
+      <p class = "pText">
+        Well, one way to do this would be to create a variable for each student. This would allow you to access each student individually, and would store their marks correctly. But what if you had fifty, or even a hundred students? That would be a LOT of variables, and would take far too much work. So what could you do instead of this?
+      </p>
+      <p class = "pText">
+        <img src="code/ArraysIndexes.png" class = "photosRZoom" style="width:50%; border-radius:10px;">
+        A much more effective way of dealing with this information would be to use an array. An array is a data structure that stores data in the form of a list. Arrays have a fixed size, meaning once you create a list, you cannot add or remove items from it. Data stored in an array is accessed by its index, which starts at 0. Arrays can be created for any data type, including instances of other classes. Arrays are also useful for manipulating data. You can sort, search, and update the data stored in an array, making it quite useful in a variety of scenarios. 
+      </p>
+    </div>
+    <p class = "subtitle">Arrays VS ArrayLists</p>
+    <div class = "paragraph">
+        <p>
+            Both arrays and arrayLists store a bunch of data under a single variable name, and allow individual objects in the array/arrayList to be accessed using an index. An array can be created for any data type, and so can arrayLists. So what's the difference? The table below highlights some of the main differences between these two data types. 
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Arrays</th>
+                    <th>ArrayLists</th>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>Fixed</td>
+                    <td>Dynamic</td>
+                </tr>
+                <tr>
+                    <td>Data type stored</td>
+                    <td>Primitives or objects</td>
+                    <td>Objects</td>
+                </tr>
+                <tr>
+                    <td>Import?</td>
+                    <td>java.util.Arrays (optional)</td>
+                    <td>java.util.ArrayList (mandatory)</td>
+                </tr>
+                <tr>
+                    <td>Get length</td>
+                    <td>arrayName.length</td>
+                    <td>arrayListName.size()</td>
+                </tr>
+                <tr>
+                    <td>Access object</td>
+                    <td>arrayName[index]</td>
+                    <td>arrayListName.get(index)</td>
+                </tr>
+                <tr>
+                    <td>Update data</td>
+                    <td>arrayName[index] = newValue;</td>
+                    <td>arrayListName.set(index, newValue);<br>This will return the old value</td>
+                </tr>
+                <tr>
+                    <td>Declaration syntax</td>
+                    <td>dataType arrayName[] = new dataType[size];</td>
+                    <td>ArrayList<dataType> arrayListName = new ArrayList<dataType>(); </td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    <p class = "subtitle">Syntax</p>
+    <div class = "paragraph">
+      <p>
+        <img src="code/ArraysDemoCode.png" class = "photosLZoom" style="width:50%; border-radius:10px;">
+        Now that you know what an array is and why you would use one, what's the syntax? Just like all other data types, you start by declaring an array. You do this by first typing the data type, then adding square brackets afterwards to indicate that it is an array. Then, you initialize it and provide the size of the array. An example of this process is in the photo to the left. 
+          <br><br>
+        For creating an ArrayList, the syntax is slightly different. It is mandatory to import java.util.ArrayList before creating an ArrayList. Once you do, you can declare a new arraylist by following this syntax: <br>ArrayList<dataType> arrayListName = new ArrayList<dataType>();<br> If you wish, you could provide a size within the brackets, but it is not necessary. If a size is not given, the default capacity is ten. 
+      </p>
+    </div>
+    <p class = "subtitle">Common Errors</p>
+    <div class = "paragraph">
+        <p>
+            There are a few things that you should keep in mind when using arrays. Firstly, arrays are zero-indexed - the first object in an array is always at an index of zero, not one. Because of this, the last object in an array is at an index of array.length-1, not at an index of array.length. <br><br>Additionally, when looping through arrays, it is important to ensure you set the correct loop end case correctly, otherwise you may either go out of bounds or skip elements. For example, if an array has a size of length, trying to access the data at index == length will cause an IndexOutOfBounds exception. 
+        </p>
+    </div>
+    <p class = "subtitle">Examples</p>
+    <div class = "paragraph">
+        Below are some examples of using arrays and arraylists.  
+    </div>
+  </div>
+
+  <img src="imgs/Snow3.png" id = "snow">
+
+</body>
+
+</html>

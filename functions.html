@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>ICS4U0 - Portfolio - Functions</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function changePos(i) {
+      var stuff = document.querySelector(':root');
+      stuff.style.setProperty('--xPos'+"i", Math.random() * 100 + "vw");
+    }
+  </script>
+
+  <!--Image first? Maybe an image of a computer or something that matches the color scheme?-->
+  <h1 id = "portfolio"> Portfolio</h1>
+  <div id="navBar">
+
+    <a href = "index.html" class = "navLink">Introduction</a>
+    <a href = "about.html" class = "navLink">About Me</a>
+    <div class = "dropdown">
+      <p class = "navLink" id = "tutorial">Tutorials</p>
+      <div class = "dropdownLinks">
+        <a href = "oop.html" class = "dlink">OOP</a>
+        <a href = "arrays.html" class = "dlink">Arrays</a>
+        <a href = "functions.html" class = "dlink">Functions</a>
+        <a href = "search.html" class = "dlink">Search & Sort</a>
+        <a href = "recursion.html" class = "dlink">Recursion</a>
+
+      </div>
+    </div>
+    <a href = "bibliography.html" class = "navLink">Bibliography</a>
+
+  </div>
+
+  <!--Draw dots-->
+  <span class = "dot" id = "dot1" onload="changePos(1)"></span>
+  <span class = "dot" id = "dot2" onload="changePos(2)"></span>
+  <span class = "dot" id = "dot3" onload="changePos(3)"></span>
+  <span class = "dot" id = "dot4" onload="changePos(4)"></span>
+  <span class = "dot" id = "dot5" onload="changePos(5)"></span>
+  <span class = "dot" id = "dot6" onload="changePos(6)"></span>
+  <span class = "dot" id = "dot7" onload="changePos(7)"></span>
+  <span class = "dot" id = "dot8" onload="changePos(8)"></span>
+  <span class = "dot" id = "dot9" onload="changePos(9)"></span>
+  <span class = "dot" id = "dot10" onload="changePos(10)"></span>
+  <span class = "dot" id = "dot11" onload="changePos(11)"></span>
+  <span class = "dot" id = "dot12" onload="changePos(12)"></span>
+  <span class = "dot" id = "dot13" onload="changePos(13)"></span>
+  <span class = "dot" id = "dot14" onload="changePos(14)"></span>
+  <span class = "dot" id = "dot15" onload="changePos(15)"></span>
+  <span class = "dot" id = "dot16" onload="changePos(16)"></span>
+  <span class = "dot" id = "dot17" onload="changePos(17)"></span>
+  <span class = "dot" id = "dot18" onload="changePos(18)"></span>
+  <span class = "dot" id = "dot19" onload="changePos(19)"></span>
+  <span class = "dot" id = "dot20" onload="changePos(20)"></span>
+  <span class = "dot" id = "dot21" onload="changePos(21)"></span>
+  <span class = "dot" id = "dot22" onload="changePos(22)"></span>
+
+
+
+  <h1 class = "title">Functions</h1>
+  <div class = "bodyText"> 
+    <div class = "paragraph">
+      <p>
+        Text here
+      </p>
+    </div>
+  </div>
+
+
+  <img src="imgs/Snow3.png" id = "snow">
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>ICS4U0 - Portfolio - Search and Sort</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function changePos(i) {
+      var stuff = document.querySelector(':root');
+      stuff.style.setProperty('--xPos'+"i", Math.random() * 100 + "vw");
+    }
+  </script>
+
+  <!--Image first? Maybe an image of a computer or something that matches the color scheme?-->
+  <h1 id = "portfolio"> Portfolio</h1>
+  <div id="navBar">
+
+    <a href = "index.html" class = "navLink">Introduction</a>
+    <a href = "about.html" class = "navLink">About Me</a>
+    <div class = "dropdown">
+      <p class = "navLink" id = "tutorial">Tutorials</p>
+      <div class = "dropdownLinks">
+        <a href = "oop.html" class = "dlink">OOP</a>
+        <a href = "arrays.html" class = "dlink">Arrays</a>
+        <a href = "functions.html" class = "dlink">Functions</a>
+        <a href = "search.html" class = "dlink">Search & Sort</a>
+        <a href = "recursion.html" class = "dlink">Recursion</a>
+
+      </div>
+    </div>
+    <a href = "bibliography.html" class = "navLink">Bibliography</a>
+
+  </div>
+
+  <!--Draw dots-->
+  <span class = "dot" id = "dot1" onload="changePos(1)"></span>
+  <span class = "dot" id = "dot2" onload="changePos(2)"></span>
+  <span class = "dot" id = "dot3" onload="changePos(3)"></span>
+  <span class = "dot" id = "dot4" onload="changePos(4)"></span>
+  <span class = "dot" id = "dot5" onload="changePos(5)"></span>
+  <span class = "dot" id = "dot6" onload="changePos(6)"></span>
+  <span class = "dot" id = "dot7" onload="changePos(7)"></span>
+  <span class = "dot" id = "dot8" onload="changePos(8)"></span>
+  <span class = "dot" id = "dot9" onload="changePos(9)"></span>
+  <span class = "dot" id = "dot10" onload="changePos(10)"></span>
+  <span class = "dot" id = "dot11" onload="changePos(11)"></span>
+  <span class = "dot" id = "dot12" onload="changePos(12)"></span>
+  <span class = "dot" id = "dot13" onload="changePos(13)"></span>
+  <span class = "dot" id = "dot14" onload="changePos(14)"></span>
+  <span class = "dot" id = "dot15" onload="changePos(15)"></span>
+  <span class = "dot" id = "dot16" onload="changePos(16)"></span>
+  <span class = "dot" id = "dot17" onload="changePos(17)"></span>
+  <span class = "dot" id = "dot18" onload="changePos(18)"></span>
+  <span class = "dot" id = "dot19" onload="changePos(19)"></span>
+  <span class = "dot" id = "dot20" onload="changePos(20)"></span>
+  <span class = "dot" id = "dot21" onload="changePos(21)"></span>
+  <span class = "dot" id = "dot22" onload="changePos(22)"></span>
+
+
+S
+  <h1 class = "title">Search and Sort</h1>
+  <div class = "bodyText"> 
+    <p class = "subtitle">Why search and sort?</p>
+    <div class = "paragraph">
+      <p class = "pText">
+        Many things in life are ordered or sorted. Books are shelved alphabetically by author, students are sorted by their marks, schools are ranked by test results, and countries are sorted by population or area. It is just as important to be able to sort these things using code. But not only do is it vital to be able to sort items, it is also necessary to be able to search these lists or arrays to access the sorted elements. Thus, searching and sorting are two very important parts of array manipulations. 
+      </p>
+    </div>
+    <p class = "subtitle">Searching algorithms</p>
+    <div class = "paragraph">
+      <p class = "pText">
+	Searching an array allows users to see if an array contains an element, and if so, at which index. <br>There are two basic ways to search through an array: sequential search and binary search. Click below to learn more about either searching method. 
+      </p>
+      <div class = "collapsible">
+        <details>
+          <summary>Sequential Search</summary>
+	  <div class = "innerCollapsible">
+	    <p>
+	      Sequential search is a very simple searching algorithm in which all the elements in an array are compared, <img src="imgs/SortPhotos/Sequential search.png" class = "photosLZoom" style = "width: 50%; border-radius:10px;">one by one, until the desired query is found. The array that it is searching can be in any order. It has a time complexity of O(n) on average, meaning that for an array of n elements, it would take n comparisons to find the query, since each element in an arrray must be compared until either the query is found or the computer has reached the end of the array. This is a relatively slow algorithm, especially for large data sets. In the example, if we had been searching for something further in the array, such as 2, it would have taken many more steps just to check each item of the list until we reach 2. Thus, sequential search is better for small algorithms. 
+
+	      
+	    </p>
+	  </div>
+        </details>
+      </div>
+      <div class = "collapsible">
+        <details>
+          <summary>Binary Search</summary>
+	  <div class = "innerCollapsible">
+	    Binary search is much faster than sequential search. Instead of going through each element one by one, it splits the array in half and checks which half contains the desired query. <img src="imgs/SortPhotos/Binary search.png" class = "photosLZoom" style="width:50%; border-radius:10px;">It then continues to split the array in half until the desired query is the only element in the range being considered, at which point the index is returned. It requires the array to be sorted, and has a time complexity of O(log n) on average. This is much faster than sequential sort (but is more complicated to implement) and thus is much more suitable for large data sets. In the example to the left, the algorithm is searching for 16. It first checks that 16 > 11, so the lower bound moves up and the middle is recalculated. Once again, 16 > 15, so the lower bound is increased and the middle lands on 16, which is indeed the search query. Notice how this algorithm only took three steps to find an element that would have taken six steps to find if we had used sequential search instead. 
+	  </div>
+        </details>
+      </div>
+
+    </div>
+
+    <p class = "subtitle">Sorting algorithms</p>
+    <div class = "paragraph">
+      <p>
+	Sorting an array is also an important part of handling data. It allows you to order data in a particular order. There are many ways to sort data, using different methods with varying amounts of time and space complexity. Typically, a faster algorithm will take more space in memory. Some algorithms are easier to implement than others.
+      </p>
+      <div class = "collapsible">
+	<details>
+	  <summary>Bubble Sort</summary>
+	  <div class = "innerCollapsible">
+	    <p>
+	      Bubble sort is a very simple algorithm, but it has a time complexity of O(n²), which is quite slow. When bubble sorting, the computer checks the first two elements in the array. If the first element is larger than the second, it swaps them. If not, nothing happens. Then, we go on to check the second element and the third element. If they are out of order, they get swapped. This continues until the end of the array is reached, at which point it is guaranteed that the last element in the array is in the correct position. Then, the computer goes back to the beginning of the array and repeats this process, but this time it can exit the array one element earlier, since we already know the last element is sorted. For each pass over the array, one more element is sorted. This continues until the array is fully sorted.
+	    </p>
+          <!--Add an animation using css for buble sorting? Only if I have time-->
+	  </div>
+    </details>
+    
+    <details>
+      <summary>Insertion Sort</summary>
+      <div class = "innerCollapsible">
+        <p>
+	  Insertion sort is another relatively simple algorithm, and it is an in-place algorithm, meaning it doesn’t need any extra space, besides a single small temporary variable for swapping elements. In insertion sort, you start by assuming the first element in the list is sorted, so you move on to the second element. Then, you go through each element in your current range to find the correct location for you to insert the element you are currently considering correctly into the range. You essentially go through the sorted portion of the array and insert the new element in the correct location, shifting everything else down, until you have inserted all of the elements correctly into the array. Insertion sort is easy to code and understand, but has an average time complexity of O(n²) which is again quite slow. It does have a best-case time complexity of O(n), which makes it better than bubble sort, but it is still only efficient for smaller data sets. <br><br> The following examples walk through insertion sort step by step, using visuals to help. The gray box represents the element whose location is being considered, and the gray arrow is the new index of that element. The black box represents the current range of sorted elements, into which the gray box element is being inserted. 
+
+	  <br><br><img src="imgs/SortPhotos/Insertion 1.png" class = "photosRZoom" style="width:50%; border-radius:10px;">So, if you started with this array and assumed the first element, 9, is sorted (since a list of 1 will always be sorted), you would then consider the location of the second element, 5. It is clear that 5 should go before 9, so 9 is shifted down and 5 is inserted into the correct spot. 
+
+	  <br><br><img src="imgs/SortPhotos/Insertion 2.png" class = "photosLZoom" style="width:50%; border-radius:10px;">Next, we would consider 6, which belongs after 5 but before 9, where the gray arrow is pointing. Thus, 9 shifts down and 6 is inserted. 
+
+	  <br><br><img src="imgs/SortPhotos/Insertion 3.png" class = "photosRZoom" style="width:50%; border-radius:10px;">The next element, 8, belongs after 6 but before 9. 9 is shifted down, and 8 is inserted. We then move on to consider the next element, 3.
+
+	  <br><br><img src="imgs/SortPhotos/Insertion 4.png" class = "photosLZoom" style="width:50%; border-radius:10px;">Here, 3 goes before 5, so everything else is shifted down in order for 3 to be inserted in the correct location. <br>
+
+	  <br><br><img src="imgs/SortPhotos/Insertion 5.png" class = "photosRZoom" style="width:50%; border-radius:10px;">The next element to consider is 2, which belongs at the very beginning, so once again, everything else is shifted down and 2 is inserted at the beginning of the array. 
+
+	  <br><br><img src="imgs/SortPhotos/Insertion 6.png" class = "photosLZoom" style="width:50%; border-radius:10px;"> Since the sorted elements now encompass the entire array, the array can be declared as sorted, and the algorithm is complete. 
+	</p>
+      </div>
+    </details>
+    
+    <details>
+      <summary>Selection Sort</summary>
+      <div class = "innerCollapsible">
+        <p>
+	  Another relatively easy algorithm, selection sort selects the highest or lowest element in an array and moves it to the end. It then shrinks the range it considers and selects the next highest or lowest element, and moves it to the second last spot in the array. This continues until the entire array is sorted. It is important to note that when an element is moved to the end, it swaps spots with the element at the end. This means that any other elements in between would not move, unlike insertion sort, in which all elements in between would be shifted down. Selection sort is also an in-place algorithm like insertion sort, so it saves space, but it has a time complexity of O(n²) in all cases, making it also quite slow. 
+	  <br><br><img src="imgs/SortPhotos/Selection 1.png" class = "photosLZoom" style="width:35%; border-radius:10px;">The first step would be to select the largest element in the array, 9. The other arrow points at the end of the array, where 9 should be. Thus, in selection sort, these two elements will switch. 
+	  <br><br><img src="imgs/SortPhotos/Selection 2.png" class = "photosRZoom" style="width:35%; border-radius:10px;">Next, the program moves on to select the next largest element and move it to the last unsorted element. 8 and 3 switch places. 
+
+	  <br><br><img src="imgs/SortPhotos/Selection 3.png" class = "photosLZoom" style="width:35%; border-radius:10px;">The next largest element is 6, so it swaps places with 3, which is in the last unsorted spot in the array. 
+	  <br><br><img src="imgs/SortPhotos/Selection 4.png" class = "photosRZoom" style="width:35%; border-radius:10px;">The next largest element is 5, but it is also the last unsorted element, so it swaps with itself. 
+
+	  <br><br><img src="imgs/SortPhotos/Selection 5.png" class = "photosLZoom" style="width:35%; border-radius:10px;">The next largest element is 3, and again, it is the last unsorted element so it swaps with itself. 
+
+	  <br><br><img src="imgs/SortPhotos/Selection 6.png" class = "photosRZoom" style="width:35%; border-radius:10px;">There is now only one element left in the array, 2, but since there is only one element left, the array must be fully sorted, as the last element in selection sort is naturally sorted. Thus, the array is now fully sorted. 
+	  
+	</p>
+      </div>
+    </details>
+    
+    <details>
+      <summary>Merge Sort</summary>
+      <div class = "innerCollapsible">
+          <p>
+              Merge sort is a divide and conquer algorithm. It is a very fast algorithm that takes up a lot of space and can only be implemented through recursion (If you’re not sure what recursion is, take a look at my tutorial on recursion which can be found <a href = "recursion.html">here</a>). There are two parts to this algorithm. The first part is when the algorithm continually divides an array in half, calling the method from the beginning until it reaches a size of one, after which it returns. The second part is when the algorithm pieces the array back together. This occurs by comparing the two returned arrays. Since any array that has been returned must be in order, we can start by considering only the first element in each of the arrays. Whichever one is smaller is added to our new array, and we now move on to consider the next element in the array that just had an element moved to the new array. 
+<br><br>
+<img src="imgs/SortPhotos/Merge Sort 1.png" class = "photosRZoom" style="width:35%; border-radius:10px;">So if the two arrays were [3] and [1], 1 would be added to the new array, then 3, and since there are no more elements in either array, the array [1, 3] would be returned. Then, let’s say the computer moves on to compare [1, 3] with [2, 4]. It would see that 1 is smaller than 2, so 1 gets added to the new array, <img src="imgs/SortPhotos/Merge Sort 2.png" class = "photosLZoom" style="width:35%; border-radius:10px;">and 3 is now being compared with 2. Since 2 is smaller, it would be added, and 4 would be considered. This process would repeat until the temporary array now contains [1, 2, 3, 4], at which point this new array would be returned, to be merged again with another array, until all the elements have been sorted and the sorted array is returned. The first picture to the right depicts how the program would break down the arrays, and the photo to the left shows the returning of the data until the new, sorted array is formed and returned. 
+          </p>
+      	 </div>
+	</details>
+      </div>
+    </div>
+    
+    <p class = "subtitle">Examples of Searching and Sorting</p>
+    <div class = "paragraph">
+      <p class = "pText">
+	<table>
+	  <tr>
+	    <td>some text heretheia latheiath ;h;iottashltsah;tahi;as hi;s h;</td>
+	    <td><img src="imgs/SortPhotos/Merge Sort 2.png" class = "photosRZoom" style="width:50%; border-radius:10px;"></td>
+	  </tr>
+	</table>
+      </p>
+    </div>
+    
+  </div>
+
+
+  <img src="imgs/Snow3.png" id = "snow">
+</body>
+
+</html>
