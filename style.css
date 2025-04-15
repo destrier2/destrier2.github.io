@@ -281,6 +281,29 @@
     text-align: justify;
     line-height: 2;
   }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:hover {
+    cursor: pointer;
+  }
+  .collapsible {
+    width:80%;
+    margin: auto;
+  }
+  summary {
+    padding: 2vh;
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 0.5px solid lightgrey;
+  }
+  .innerCollapsible {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 1vh 3vh 1vh 3vh;
+  }
+  details {
+    border: 0.5px solid lightgrey;
+    margin: 5px;
+  }
   ul {
     line-height:1.5;
   }
@@ -293,8 +316,11 @@
     border-collapse: collapse;
   }
   th, td {
-    width:50%;
+    /*width:50%;*/
     border:2px solid var(--accent);
+  }
+  .OOPtable {
+    width:50%;
   }
   th {
     background-color:rgb(179, 206, 229, 0.5);
