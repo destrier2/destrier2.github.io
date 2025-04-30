@@ -27,6 +27,7 @@
     --background: #d6e8f1;
     --accent: #b3cee5;
     --button: #a2c3d8;
+    --link: #5f7b9c;
 
     --xPos1: 5vw;
     --xPos2: 10vw;
@@ -51,9 +52,18 @@
     --xPos21: 15vw;
     --xPos22: 3vw;
   }
+  a {
+    text-decoration: underline;
+    color: var(--link);
+  }
   .pText {
     text-indent: 50px;
     margin-left: 1vw;
+  }
+  .source {
+    padding-left: 25px;
+    text-indent: -25px;
+    word-break: break-all;
   }
 
   @keyframes snow {
@@ -294,14 +304,14 @@
   summary {
     padding: 2vh;
     background-color: rgb(255, 255, 255, 0.6);
-    border: 0.5px solid lightgrey;
+    border: 0.25px solid var(--accent);
   }
   .innerCollapsible {
     background-color: rgb(255, 255, 255, 0.5);
     padding: 1vh 3vh 1vh 3vh;
   }
   details {
-    border: 0.5px solid lightgrey;
+    border: 0.5px solid var(--accent);
     margin: 5px;
   }
   ul {
@@ -359,6 +369,45 @@
   }
   .photosLZoom:hover {
     transform: scale(1.8);
+  }
+  .photosCenter {
+    width: 100%;
+    display: block;
+    margin:auto;
+  }
+  .photoDiv {
+    position: relative;
+    width: 95%;
+    margin:auto;
+    border-radius: 20px;
+  }
+  .photoText {
+    position:absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--background);
+    width:100%;
+    opacity: 0;
+    height: 0;
+    text-align:center;
+    transition: .5s ease;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+  }
+  .photoDiv:hover .photoText{
+    opacity: 1;
+    height: 40%;
+  }
+  #animeSelfieDiv::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #animeSelfie {
+    float: right;
+    width: 50%;
+    border-radius: 20px;
   }
   #snow {
     min-height:5vh;
