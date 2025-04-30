@@ -22,14 +22,12 @@
   <h1 id = "portfolio"> Portfolio</h1>
   <div id="navBar">
 
-    <a href = "index.html" class = "navLink">Introduction</a>
-    <a href = "about.html" class = "navLink">About Me</a>
+    <a href = "index.html" class = "navLink">About Me</a>
     <div class = "dropdown">
       <p class = "navLink" id = "tutorial">Tutorials</p>
       <div class = "dropdownLinks">
         <a href = "oop.html" class = "dlink">OOP</a>
         <a href = "arrays.html" class = "dlink">Arrays</a>
-        <a href = "functions.html" class = "dlink">Functions</a>
         <a href = "search.html" class = "dlink">Search & Sort</a>
         <a href = "recursion.html" class = "dlink">Recursion</a>
 
@@ -102,15 +100,39 @@
     <div class = "paragraph">
       
       <p class = "pText"> 
-        Many widely-used coding languages follow OOP, including Java, C++, and Javascript. Understanding OOP is essential to understanding these languages, since the OOP format is the backbone of these languages. 
+	  Many widely-used coding languages follow OOP, including Java, C++, and Javascript <a href = "bibliography.html#Gillis">(Gillis, 2024)</a>. Understanding OOP is essential to understanding these languages, since the OOP format is the backbone of these languages.
       </p>
     </div>
     <p class = "subtitle">Inhertiance</p>
     <div class = "paragraph">
-        <p>
-            Now that you understand what classes and objects are, let's take a look at inheritance. Inheritance is also an important concept in OOP, and is also designed to echo real life. In OOP inheritance, it is when you create subclasses (children) of a superclass (parent). In real life, when a parent gives birth to a child, the child also inherits some of the attributes of the parent - they may share eye color, habits, or physical traits. When it comes to code, a subclass will inherit any public methods or fields. A subclass can also override any of these methods with its own version. 
+        <p class = "pText">
+            Now that you understand what classes and objects are, let's take a look at inheritance. Inheritance is an important concept in OOP, and is also designed to echo real life. In OOP inheritance, it is when you create subclasses (children) of a superclass (parent). In real life, when a parent gives birth to a child, the child also inherits some of the attributes of the parent - they may share eye color, habits, or physical traits. When it comes to code, a subclass will inherit any public or protected methods or fields. A subclass can also override any of these methods with its own version. This allows classes to reuse methods or fields, and further helps Java model real life objects. 
         </p>
-    </div>
+      </div>
+
+   <p class = "subtitle">Encapsulation</p>
+    <div class = "paragraph">
+        <p class = "pText">
+            Another important part of OOP is encapsulation. Encapsulation allows data to be hidden from external sources, to allow something to be visible or accessible only within a certain area. For example, let’s say there’s a computer program designed to calculate and return the average mark of a class of students. A student could call on this method and correctly receive the average mark, but they wouldn’t be able to see each individual students’ marks, since that data would be encapsulated. There are three pretty basic levels of encapsulation: private, protected, and public.
+        </p>
+	<p class = "pText">
+	  Private methods and fields can only be accessed within their own class, protected data  can be accessed by the original class along with any other classes related to it, such as a subclass, and public methods and fields have no protection and can be called or accessed from any class. An example of encapsulation is provided in the picture below.
+	</p>
+
+	<div class = "photoDiv">
+	  <img src="imgs/OOP example.png" class = "photosCenter">
+	  <div class = "photoText">This is a basic UML diagram of a superclass, Animal, and some possible subclasses that could be derived from this parent class. 
+
+<!-- According to this diagram, a Dog object would also inherit the play method from Pet, along with the eatFood and sleep methods, but wouldn't have a meow() method since a Cat is not directly related to a Dog. -->
+
+Hashtag (#) denotes a protected method or field, + denotes a public method or field, and - denotes a private method or field. Note that the arrows are always facing downards, since a subclass is inherits from a parent class, and not the other way around.</div>
+	</div>
+	<p class = "pText">
+	  Usually, a class will have a mix of different levels of encapsulation to allow the class to hide data and certain functions, but also allow some level of interaction with other classes. In the example about students and their marks mentioned above, the method that calculates and returns the average would have to be public in order for the student to access it, but the student marks would likely be private. Thus, encapsulation works to hide and protect data, and only to allow certain parts of it to be visible to other classes. 
+	</p>
+     </div>
+
+
   </div>
 
 
