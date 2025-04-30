@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>ICS4U0 - Portfolio - Recursion</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function changePos(i) {
+      var stuff = document.querySelector(':root');
+      stuff.style.setProperty('--xPos'+"i", Math.random() * 100 + "vw");
+    }
+  </script>
+
+  <!--Image first? Maybe an image of a computer or something that matches the color scheme?-->
+  <h1 id = "portfolio"> Portfolio</h1>
+  <div id="navBar">
+
+    <a href = "index.html" class = "navLink">About Me</a>
+    <div class = "dropdown">
+      <p class = "navLink" id = "tutorial">Tutorials</p>
+      <div class = "dropdownLinks">
+        <a href = "oop.html" class = "dlink">OOP</a>
+        <a href = "arrays.html" class = "dlink">Arrays</a>
+        <a href = "search.html" class = "dlink">Search & Sort</a>
+        <a href = "recursion.html" class = "dlink">Recursion</a>
+
+      </div>
+    </div>
+    <a href = "bibliography.html" class = "navLink">Bibliography</a>
+
+  </div>
+
+  <!--Draw dots-->
+  <span class = "dot" id = "dot1" onload="changePos(1)"></span>
+  <span class = "dot" id = "dot2" onload="changePos(2)"></span>
+  <span class = "dot" id = "dot3" onload="changePos(3)"></span>
+  <span class = "dot" id = "dot4" onload="changePos(4)"></span>
+  <span class = "dot" id = "dot5" onload="changePos(5)"></span>
+  <span class = "dot" id = "dot6" onload="changePos(6)"></span>
+  <span class = "dot" id = "dot7" onload="changePos(7)"></span>
+  <span class = "dot" id = "dot8" onload="changePos(8)"></span>
+  <span class = "dot" id = "dot9" onload="changePos(9)"></span>
+  <span class = "dot" id = "dot10" onload="changePos(10)"></span>
+  <span class = "dot" id = "dot11" onload="changePos(11)"></span>
+  <span class = "dot" id = "dot12" onload="changePos(12)"></span>
+  <span class = "dot" id = "dot13" onload="changePos(13)"></span>
+  <span class = "dot" id = "dot14" onload="changePos(14)"></span>
+  <span class = "dot" id = "dot15" onload="changePos(15)"></span>
+  <span class = "dot" id = "dot16" onload="changePos(16)"></span>
+  <span class = "dot" id = "dot17" onload="changePos(17)"></span>
+  <span class = "dot" id = "dot18" onload="changePos(18)"></span>
+  <span class = "dot" id = "dot19" onload="changePos(19)"></span>
+  <span class = "dot" id = "dot20" onload="changePos(20)"></span>
+  <span class = "dot" id = "dot21" onload="changePos(21)"></span>
+  <span class = "dot" id = "dot22" onload="changePos(22)"></span>
+
+
+
+  <h1 class = "title">Recursion</h1>
+  <div class = "bodyText"> 
+    <div class = "paragraph">
+      <p class = "pText">
+        Imagine peeling an onion apart, layer by layer. Or opening Russian nesting dolls to reveal the inner dolls. Or even calculating the factorial of a number. What might all of these have in common? Well, they're all examples of recursion. 
+      </p>
+      <p class = "pText">
+	You may have heard of recursion before when talking about <a href="search.html#mergesort">merge sort</a>, and can also be used to implement a recursive <a href = "search.html#binarysearch">binary search</a>. But what exactly is recursion? Recursion is a strategy in many coding languages that occurs when a method calls itself within itself, <img src="code/factorialLoop.png" class = "photosLZoom" style = "width: 50%; border-radius:10px;">in order to break down and solve a problem. A common example of recursion is when dealing with factorials. If we asked a computer to solve for 10! we could use a for loop, as demonstrated to the left. <img src="code/factorialRecursive.png" class = "photosRZoom" style = "width: 50%; border-radius:10px;">Or, we could break it down. We know that 10! = 10 * 9! = 10 * 9 * 8! etc. And, we know that 1! = 1. So, we could use this knowledge and write a recursive function, like the one demonstrated to the right. </p>
+<p class = "pText"> But what's to stop a recursive function from calling itself over and over? A base case! A base case is the basic condition under which the function stops calling itself. In the factorial example above, the base case is when n <= 1, because all factorial calls will eventually boil down to 1!. Without a base case, the function would just keep calling itself until it reaches a number of calls that the computer can't handle, at which point the program would throw a StackOverflow exception, which just means that there were too many calls. 
+      </p>
+    </div>
+    <p class = "subtitle">Common mistakes</p>
+    <div class = "paragraph">
+      <p class = "pText">
+	When implementing recursion, there are a few notable mistakes to avoid. One of the most common mistakes is forgetting the base case. Even if the recursive portion of the method is correctly implemented, without the base case, the program will just crash. That being said, it can also be challenging to correctly break down the problem into a recursive format. Making sure that the correct recursive call is being made is also important. Coming back to the factorial example, if the method returned n*factorialTwo(n) it would also cause a stack overflow, since the base case would never be reached. The best way to learn how to make the correct recursive call to make is just to practice, practice, and practice, and train yourself to think recursivly instead of iteratively, using loops. 
+      </p>
+      <p class = "pText">
+	Additionally, recursion is pretty expensive <a href = "bibliography.html#McKenzie">(McKenzie, 2021)</a> in terms of optimal performance. It may be cheaper for the computer to merely implement an iterative format instead of a recursive one. Despite this, recursion is still an important concept to understand, as it can help change the way you approach a problem, and provide another possible tool for future programming projects. 
+      </p>
+    </div>
+
+  </div>
+
+
+  <img src="imgs/Snow3.png" id = "snow">
+</body>
+
+</html>
