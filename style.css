@@ -399,7 +399,7 @@
     opacity: 1;
     height: 40%;
   }
-  #animeSelfieDiv::after {
+  .clearfix::after {
     content: "";
     clear: both;
     display: table;
